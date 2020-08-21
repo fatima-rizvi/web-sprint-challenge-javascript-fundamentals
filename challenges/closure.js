@@ -18,7 +18,7 @@ myFunction();
 
 // Explanation: 
 
-//So, nestedFunction needs to console log the variabel internal. FIrst it looks within itself, but the variable internal isn't declared or located inside of the nestedFunction. So the nestedFunction has to look outside of it's function to myFunction. myFunction has the variable internal, so nestedFunction can access it. This only works because even though internal is declared with a const, the function nestedFunction is within myFunction, so it has access to internal. If nestedFunction was outside of myFunction, it would not be able to access the variable internal with the above code.
+//So, nestedFunction needs to console log the variabel internal. FIrst it looks within itself, but the variable internal isn't declared or located inside of the nestedFunction. So the nestedFunction has to look outside of it's function to myFunction. myFunction has the variable internal, so nestedFunction can access it. This only works because even though internal is declared with a const, the function nestedFunction is within myFunction, so it has access to internal. If nestedFunction was outside of myFunction, it would not be able to access the variable internal with the above code. Variables can be passed down but not up.
 
 /* Task 2: Counter */
 

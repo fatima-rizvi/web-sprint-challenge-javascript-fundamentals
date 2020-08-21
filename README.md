@@ -27,13 +27,30 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+.forEach is used like a for loop, does not require a return statement, and does not automatically return an array. On the other hand, .map does not manipulate the original data, always returns a new array, and requires the return statement. While .forEach can be used for a variety of things, like for loops can, .map() is preferable for converting data.
+
 2. Explain the difference between a callback and a higher order function.
+
+The higher order function recieves the callback function as a parameter while the callback function is passed into the higher order function as an argument.
 
 3. What is closure?
 
+Closure is nesting something within something else. It gives us the ability to put functions together and the ability to access functions from a parent level scope in a child level scope even after the parent function is terminated. Variables can be passed down but not up.
+
 4. Describe the four rules of the 'this' keyword.
 
+Window/Global Object Binding: If no other rules are applied, then 'this' will be in the global scope and will refer to the whole window. If you are in strict mode however, 'this' will be returned as undefined.
+
+Implicit Binding: Whenever a function is called with a dot in front of it, look to the left of the dot to see what 'this' refers to.
+
+New Binding: When a condtructor function is invoked using the 'new' keyword, the 'this' keyword will refer to the new object created.
+
+Explicit Binding: There are three types of explicit binding. There is .call, .apply, and .bind. .call will immediately invoke the function you are calling and will allow you to pass in arguments one by one. .apply will also immediately invoke the function, but you can pass in arguments as an array. Finally, .bind  does not immediately invoke the function but rather returns a brand new funciton htat can be invoked later. It also allows you to pass in arguments one by one.*/
+
+
 5. Why do we need super() in an extended class?
+
+In class syntax, super() replaces object.create and it allows the child class to be linked to the parent class. It allows the child class to access the parents methods and attributes.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
